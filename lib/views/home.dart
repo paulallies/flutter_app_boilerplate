@@ -1,24 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_boilerplate/models/main_scope.dart';
+import 'package:flutter_app_boilerplate/widgets/alert_button.dart';
+import 'package:flutter_app_boilerplate/widgets/http_button.dart';
 
-myHomePage(title) => Scaffold(
+class Home extends StatelessWidget {
+  Home(this.title);
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        backgroundColor: Color(0xFFb74093),
+        title: Text(this.title),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(title),
-            RaisedButton(
-              child: const Text("Press Me"),
-              onPressed: () {
-                AlertDialog(
-                  content: Text("testing"),
-                );
-              },
-            )
+            HttpButton(title: "Fetch Data"),
+            // AlertButton(
+            //   title: "title",
+            //   content: "Content",
+            // ),
           ],
         ),
       ),
     );
+  }
+}

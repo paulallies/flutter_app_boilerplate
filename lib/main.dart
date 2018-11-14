@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_boilerplate/views/home.dart';
+import 'package:flutter_app_boilerplate/views/user_list.dart';
 
-void main() => runApp(myApp());
+void main() => runApp(MyApp());
 
-myApp() => MaterialApp(
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter App Boilerplate',
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
-      home: myHomePage("testing"),
+      theme: ThemeData(),
+      home: UserList(),
     );
+  }
+}
