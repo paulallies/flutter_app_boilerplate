@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_boilerplate/views/home.dart';
+import 'package:flutter_app_boilerplate/views/imagepicker.dart';
 import 'package:flutter_app_boilerplate/views/user_list.dart';
 
 void main() => runApp(MyApp());
@@ -12,6 +12,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter App Boilerplate',
       theme: ThemeData(),
       home: UserList(),
+      routes: <String, WidgetBuilder>{
+        "/datalist": (BuildContext context) => new UserList(),
+        "/imagepicker": (BuildContext context) => new ImagePicker(),
+      },
     );
   }
 }
