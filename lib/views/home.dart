@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_boilerplate/models/main_scope.dart';
-import 'package:flutter_app_boilerplate/widgets/alert_button.dart';
 import 'package:flutter_app_boilerplate/widgets/http_button.dart';
 
 class Home extends StatelessWidget {

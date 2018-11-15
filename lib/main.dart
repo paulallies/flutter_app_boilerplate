@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_boilerplate/views/imagepicker.dart';
-import 'package:flutter_app_boilerplate/views/user_list.dart';
+import 'package:flutter_app_boilerplate/views/user/detail.dart';
+import 'package:flutter_app_boilerplate/views/user/list.dart';
 
 void main() => runApp(MyApp());
 
