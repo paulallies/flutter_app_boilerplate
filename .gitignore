@@ -30,7 +30,7 @@
 .pub/
 build/
 
-
+lib/config/
 
 # Android related
 **/android/**/gradle-wrapper.jar

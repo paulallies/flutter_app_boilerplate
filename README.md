@@ -30,3 +30,17 @@ When scaffolding an appbar screen we will need to assign a drawer widget to the 
 ```dart
 
 ```
+
+
+### User List
+As a user I would like to view a list of users with first, surname and avatar.
+
+
+### Add a User
+As a user I would like to see a plus button on the userlist appbar.  I would like to press this button 
+and navigate to a new screen to create a user with the following details
+1. First Name
+2. Surname
+3. Email Address
+When I press the save button the user needs to be posted to the api. and go back to list screen.
+

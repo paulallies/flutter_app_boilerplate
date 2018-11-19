@@ -9,8 +9,11 @@ dependencies:
   scoped_model: "^0.3.0"
   cupertino_icons: ^0.1.2
   http: ^0.12.0
+  intl: ^0.15.7
 dev_dependencies:
   flutter_test:
     sdk: flutter
 flutter:
   uses-material-design: true
+  assets:
+  - assets/bg.jpg
