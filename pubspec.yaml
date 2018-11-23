@@ -10,6 +10,8 @@ dependencies:
   cupertino_icons: ^0.1.2
   http: ^0.12.0
   intl: ^0.15.7
+  sqflite: any
+  localstorage: ^1.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter

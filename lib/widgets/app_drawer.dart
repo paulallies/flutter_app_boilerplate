@@ -48,6 +48,15 @@ class AppDrawer extends StatelessWidget {
             },
           ),
           Divider(),
+          ListTile(
+            leading: Icon(Icons.data_usage),
+            title: Text('DB Example'),
+            onTap: () {
+              // change app state...
+              _gotoPage("/dblist", context);
+            },
+          ),
+          Divider(),
         ],
       ),
     ));

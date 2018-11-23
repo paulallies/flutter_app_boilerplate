@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_boilerplate/actions/user.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -10,8 +11,9 @@ class _LoginState extends State<Login> {
   TextEditingController passwordTextController = TextEditingController();
 
   void _login() {
-    print(emailTextController.text);
-    print(passwordTextController.text);
+    var username = emailTextController.text;
+    var password = passwordTextController.text;
+    UserActions.authenticate(username, password);
   }
 
   @override

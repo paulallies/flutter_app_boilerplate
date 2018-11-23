@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_boilerplate/models/main_scope.dart';
 import 'package:flutter_app_boilerplate/views/account/login.dart';
+import 'package:flutter_app_boilerplate/views/dblist/list.dart';
 import 'package:flutter_app_boilerplate/views/imagepicker.dart';
 import 'package:flutter_app_boilerplate/views/user/list.dart';
 import 'package:scoped_model/scoped_model.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
           "/datalist": (BuildContext context) => UserList(),
           "/imagepicker": (BuildContext context) => ImagePicker(),
           "/login": (BuildContext context) => Login(),
+          "/dblist": (BuildContext context) => ListViewNote(),
         },
       ),
     );
